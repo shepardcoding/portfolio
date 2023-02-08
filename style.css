@@ -2,41 +2,45 @@ body {
   background-color: #a9a9a9;
   margin: 0;
   padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
   ul li {
-    float: none;
-    width: 50%;
-    text-align: center;
-    margin-right: 70px;
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+    justify-content: center;
+  }
+  li > a {
+    align-items: center;
   }
 }
 /*this is for the navigation*/
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #000000;
 }
 
 li {
-  list-style: none;
-  background-color: #c9c2ba;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
+  border: 1px solid #000000;
+  display: inline-block;
+  background-color: #f3bb53;
+  padding: 15px;
+  margin: 1em 0.2em;
 }
 
 li > a {
+  display: inline-block;
   color: #000000;
 }
 
 li:hover {
-  background-color: #f3bb53;
-}
-
-li:active {
   background-color: #c5983c;
 }
 
