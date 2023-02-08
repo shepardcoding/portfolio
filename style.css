@@ -10,11 +10,8 @@ body {
   ul li {
     display: flex;
     margin: 0;
-    font-size: 18px;
+    padding: 0;
     justify-content: center;
-  }
-  li > a {
-    align-items: center;
   }
 }
 /*this is for the navigation*/
@@ -31,7 +28,7 @@ li {
   border: 1px solid #000000;
   display: inline-block;
   background-color: #f3bb53;
-  padding: 30px;
+  padding: 5px;
   border-radius: 5px;
   margin: 3px;
 }
@@ -40,6 +37,7 @@ li > a {
   display: inline-block;
   color: #000000;
   font-size: 20px;
+  padding: 20px;
 }
 
 li:hover {
