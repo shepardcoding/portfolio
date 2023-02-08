@@ -2,46 +2,55 @@ body {
   background-color: #a9a9a9;
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-  ul li {
+@media screen and (max-width: 600px) {
+  .topNav .nav-btn {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     justify-content: center;
+    background-color: #f3bb53;
+    color: #000000;
+    width: 100%;
+    border: 0.5px solid black;
   }
 }
+@media screen and (max-width: 600px) {
+  .nav-btn a {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
 /*this is for the navigation*/
-ul {
+.topNav {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
-  cursor: pointer;
-  background-color: #000000;
 }
 
-li {
-  border: 1px solid #000000;
-  display: inline-block;
+.nav-btn {
   background-color: #f3bb53;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 3px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-li > a {
-  display: inline-block;
+.nav-btn a {
   color: #000000;
-  font-size: 20px;
-  padding: 20px;
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
 }
 
-li:hover {
-  background-color: #c5983c;
+.nav-btn:hover {
+  background-color: #e8d92e;
 }
 
 a {
@@ -96,7 +105,7 @@ a {
   color: #bf470c;
 }
 
-/*main whitepage on the home page*/
+/*main whitepage on the home page
 .paper {
   text-align: center;
   background-color: #ffffff;
@@ -108,6 +117,7 @@ a {
   padding-top: 0%;
   margin: 60px 60px;
 }
+*/
 
 p {
   margin-left: 20px;
