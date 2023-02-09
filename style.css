@@ -17,7 +17,7 @@ body {
     border: 0.5px solid black;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .nav-btn a {
     width: 100%;
     font-weight: bold;
@@ -59,14 +59,6 @@ a {
   margin: 10px;
 }
 
-/*email button on the home page*/
-.btn-email {
-  font-size: 20px;
-  background-color: #f3bb53;
-  border-radius: 8px;
-  padding: 10px;
-}
-
 /*also used to center images throughout*/
 .logo,
 .headshot {
@@ -82,11 +74,42 @@ a {
 /*container for the twitter icon on the main page and if I ever add different social media*/
 .social-container {
   display: grid;
-  grid-template-columns: 200px;
-  grid-template-rows: 200px;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(2, 200px);
   justify-content: center;
   align-items: center;
+  width: auto;
   padding: 30px;
+  margin-right: auto;
+  margin-bottom: -60px;
+}
+
+/*this is going to be for the portfolio page for project containers*/
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  margin-bottom: -50px;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.portfolio-item {
+  height: 200px;
+  width: auto;
+  max-width: 400px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.twitter-item {
+  height: 200px;
+  width: auto;
+  max-width: 400px;
+  align-content: center;
+  justify-content: center;
 }
 
 .footer {
@@ -157,22 +180,4 @@ a.project-link:hover {
 
 article h2 {
   text-align: center;
-}
-
-/*this is going to be for the portfolio page for project containers*/
-.portfolio-container {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: repeat(2, 200px);
-  gap: 30px;
-  margin: 50px;
-  margin-bottom: 0;
-  justify-content: center;
-}
-
-.portfolio-item {
-  height: 200px;
-  width: 200px;
-  align-content: center;
-  border-radius: 50px;
 }
