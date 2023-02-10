@@ -5,52 +5,64 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-  .topNav .nav-btn {
-    display: flex;
-    margin: 0;
-    padding: 0px;
-    justify-content: center;
-    background-color: #f3bb53;
-    color: #000000;
-    width: 100%;
-    border: 0.5px solid black;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav-btn a {
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-  }
+/*This starts the new menu including the hamburger*/
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  width: 100%;
+  background: #000;
 }
 
-/*this is for the navigation*/
-.topNav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
   text-align: center;
 }
-
-.nav-btn {
-  background-color: #f3bb53;
-  border: none;
-  padding: 10px;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 18px;
+#hamitems a:hover {
+  background: #d28510;
 }
 
-.nav-btn a {
-  color: #000000;
-  padding: 30px;
-  font-family: "Open Sans", sans-serif;
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+  display: none;
 }
 
-.nav-btn:hover {
-  background-color: #e8d92e;
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #f7bf50;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
 }
 
 a {
