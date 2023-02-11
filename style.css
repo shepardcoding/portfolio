@@ -34,7 +34,8 @@ article h2 {
 /* (A) WRAPPER */
 #hamnav {
   width: 100%;
-  background: #000;
+  background: #a9a9a9;
+  text-align: center;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
@@ -48,7 +49,6 @@ article h2 {
   color: white;
   text-decoration: none;
   text-align: center;
-  border: 0.5px solid darkgray;
   background-color: #f7bf50;
 }
 #hamitems a:hover {
@@ -77,10 +77,11 @@ article h2 {
   #hamnav label {
     display: inline-block;
     color: white;
-    background: #f7bf50;
+    background: #c08207;
     font-style: normal;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 30px;
+    margin-bottom: 5px;
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
@@ -136,6 +137,16 @@ article h2 {
   align-content: center;
   justify-content: center;
   border-radius: 50px;
+}
+
+/*to adjust the portfolio and social containters, used portfolio-container only*/
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
 /*bottom of page items*/
