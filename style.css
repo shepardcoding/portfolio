@@ -35,7 +35,6 @@ article h2 {
 #hamnav {
   width: 100%;
   background: #a9a9a9;
-  text-align: center;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
@@ -50,6 +49,7 @@ article h2 {
   text-decoration: none;
   text-align: center;
   background-color: #f7bf50;
+  border: 1px solid black;
 }
 #hamitems a:hover {
   background: #d28510;
@@ -67,20 +67,21 @@ article h2 {
   #hamitems a {
     box-sizing: border-box;
     display: block;
-    width: 100%;
-    border-top: 1px solid #333;
-    border: none;
+    width: 40%;
+    border: 1px solid #333;
     margin: 0;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bolder;
   }
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
     display: inline-block;
-    color: white;
-    background: #c08207;
+    color: black;
     font-style: normal;
-    font-size: 1.2em;
-    padding: 30px;
+    font-size: 5em;
+    padding: 10px;
     margin-bottom: 5px;
   }
 
