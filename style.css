@@ -120,12 +120,11 @@ article h2 {
 }
 
 /*this is going to be for the portfolio page for project containers*/
-.portfolio-container {
+#portfolio-container {
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: repeat(3, 50px);
   gap: 30px;
-  margin-bottom: -50px;
   justify-content: center;
   margin-right: auto;
 }
@@ -137,11 +136,12 @@ article h2 {
   align-content: center;
   justify-content: center;
   border-radius: 50px;
+  margin: 10px;
 }
 
 /*to adjust the portfolio and social containters, used portfolio-container only*/
 @media screen and (max-width: 768px) {
-  .portfolio-container {
+  #portfolio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
