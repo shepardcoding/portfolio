@@ -7,8 +7,8 @@ body {
 
 /*text adjustments*/
 p {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   text-align: center;
 }
 
@@ -95,6 +95,15 @@ article h2 {
 }
 /*end navigation code*/
 
+/*for the main logo*/
+#logo {
+  border-radius: 180px;
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
 /*used to center images throughout*/
 .aboutImg {
   border-radius: 180px;
@@ -106,24 +115,29 @@ article h2 {
   max-height: 250px;
 }
 
-/*container for the twitter icon on the main page and if I ever add different social media, currently just Twitter and GitHub*/
-.social-container {
+/*container for the twitter icon on the main page and if I ever add different social media, currently just Twitter, LinkedIn and GitHub*/
+#social-container {
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: 200px 220px 200px;
+  grid-template-rows: repeat(3, 80px);
+  gap: 30px;
   justify-content: center;
-  align-items: center;
-  width: auto;
-  padding: 30px;
   margin-right: auto;
-  margin-bottom: -60px;
+}
+
+.social-item {
+  height: 200px;
+  width: auto;
+  max-width: 400px;
+  align-content: center;
+  justify-content: center;
 }
 
 /*this is going to be for the portfolio page for project containers*/
 #portfolio-container {
   display: grid;
   grid-template-columns: 200px 200px 200px;
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: repeat(3, 90px);
   gap: 30px;
   justify-content: center;
   margin-right: auto;
@@ -139,19 +153,10 @@ article h2 {
   margin: 10px;
 }
 
-/*for the social container on the home page*/
-#social-container {
-  display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: repeat(2, 100px);
-  gap: 30px;
-  justify-content: center;
-  margin-right: auto;
-}
-
 /*to adjust the portfolio and social containters, used portfolio-container only*/
 @media screen and (max-width: 768px) {
-  #portfolio-container {
+  #portfolio-container,
+  #social-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,15 +164,15 @@ article h2 {
   }
 }
 
-/*bottom of page items*/
-.twitter-item {
-  height: 200px;
-  width: auto;
-  max-width: 400px;
-  align-content: center;
-  justify-content: center;
+/*adjust logo for mobile*/
+@media screen and (max-width: 768px) {
+  #logo {
+    max-width: 250px;
+    max-height: 250px;
+  }
 }
 
+/*bottom of page items*/
 /*footer and update are on every page*/
 .footer {
   font-family: monospace;
