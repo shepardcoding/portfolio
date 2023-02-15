@@ -13,7 +13,7 @@ p {
 }
 
 a {
-  color: #0f40a1;
+  color: #000000;
   text-decoration: none;
   margin: 10px;
 }
@@ -67,7 +67,7 @@ article h2 {
   #hamitems a {
     box-sizing: border-box;
     display: block;
-    width: 40%;
+    width: 100%;
     border: 2px solid #333;
     margin: 0;
     font-size: 18px;
@@ -96,8 +96,7 @@ article h2 {
 /*end navigation code*/
 
 /*used to center images throughout*/
-.logo,
-.headshot {
+.aboutImg {
   border-radius: 180px;
   display: block;
   margin: 0 auto;
@@ -107,7 +106,7 @@ article h2 {
   max-height: 250px;
 }
 
-/*container for the twitter icon on the main page and if I ever add different social media*/
+/*container for the twitter icon on the main page and if I ever add different social media, currently just Twitter and GitHub*/
 .social-container {
   display: grid;
   grid-template-columns: 200px 200px;
@@ -159,6 +158,7 @@ article h2 {
   justify-content: center;
 }
 
+/*footer and update are on every page*/
 .footer {
   font-family: monospace;
   font-size: 16px;
@@ -176,7 +176,7 @@ article h2 {
   color: #bf470c;
 }
 
-/*main whitepage on the home page
+/*main whitepage on the any page for news, blog, etc..
 .paper {
   text-align: center;
   background-color: #ffffff;
@@ -198,4 +198,8 @@ article h2 {
 .form-inputs {
   display: inline-block;
   text-align: right;
+}
+
+.mailto {
+  color: #9e700b;
 }
