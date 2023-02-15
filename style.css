@@ -139,6 +139,16 @@ article h2 {
   margin: 10px;
 }
 
+/*for the social container on the home page*/
+#social-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: repeat(2, 100px);
+  gap: 30px;
+  justify-content: center;
+  margin-right: auto;
+}
+
 /*to adjust the portfolio and social containters, used portfolio-container only*/
 @media screen and (max-width: 768px) {
   #portfolio-container {
